@@ -1,0 +1,37 @@
+:root {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+#app a {
+  color: #646cff;
+}
+
+#app a.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+#app a.cta:hover {
+  background: #535bf2;
+  text-decoration: none;
+}
