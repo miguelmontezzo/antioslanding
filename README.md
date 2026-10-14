@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Landing Computize Network | Anti Copy Club
 
-# Run and deploy your AI Studio app
+Landing page da Computize — Dossiê Estratégico de Evolução (Anti Copy Club).
 
-This contains everything you need to run your app locally.
+## Rodar localmente
 
-View your app in AI Studio: https://ai.studio/apps/e6e079ec-7c50-4796-a597-be12d6546870
+1. Instalar dependências:
+   ```bash
+   npm install
+   ```
+2. Subir o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+3. Abrir no navegador: [http://localhost:3000](http://localhost:3000)
 
-## Run Locally
+Para editar todo o conteúdo da landing, acesse **[/edit](http://localhost:3000/edit)**. As alterações são salvas no navegador (localStorage).
 
-**Prerequisites:**  Node.js
+## Build para produção
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm run build
+npm run preview
+```

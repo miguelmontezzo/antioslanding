@@ -16,6 +16,11 @@
 @layer base {
   body {
     @apply bg-dark text-white font-sans antialiased selection:bg-accent selection:text-white;
+    cursor: url('/cursor.svg') 12 12, auto;
+  }
+
+  a, button, [role="button"], input, textarea, select {
+    cursor: url('/cursor.svg') 12 12, pointer;
   }
 }
 
@@ -28,20 +33,24 @@
   @apply bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-2xl;
 }
 
+/* Mobile-first: base = mobile, depois sm/md/lg */
 .section-container {
-  @apply min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24 relative overflow-hidden;
+  @apply min-h-screen flex flex-col justify-center px-4 py-16 relative overflow-hidden;
+  @apply sm:px-6 sm:py-20 md:px-10 md:py-24 lg:px-24 lg:py-24;
 }
 
 .label-tag {
-  @apply text-[10px] uppercase tracking-[0.3em] font-bold text-accent mb-4 block;
+  @apply text-[10px] uppercase tracking-[0.25em] sm:tracking-[0.3em] font-bold text-accent mb-2 sm:mb-4 block;
 }
 
 .title-giant {
-  @apply font-display font-bold text-5xl md:text-7xl lg:text-9xl leading-[0.9] tracking-tighter uppercase;
+  @apply font-display font-bold leading-[0.9] tracking-tighter uppercase;
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl;
 }
 
 .title-large {
-  @apply font-display font-bold text-4xl md:text-6xl lg:text-7xl leading-[1] tracking-tight uppercase;
+  @apply font-display font-bold leading-[1] tracking-tight uppercase;
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
 }
 
 .text-body {
